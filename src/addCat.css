@@ -1,25 +1,45 @@
 body {
+    margin: 0;
 }
 
-.wrapper {
- display: flex;
- flex-direction: row;
- margin: 0 auto;
- margin-top: 40px;
- background-color: teal;
- width: 400px;
- height: 700px;
+html {
+    size: 100%
 }
 
 h1 {
  color: black;
+ text-align: center;
+}
+
+img {
+    size: 10%;
+}
+
+.card {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 350px;
+    height: 500px;
+}
+
+.navbar {
+ position: relative;
+ overflow: hidden;
+ background-color: #333;
+ justify-content: space-between;
+ list-style: none;
+ float: left;
+ size: 100%;
+ padding: 50px;
 }
 
 .form {
+ display: block;
  width: 300px;
  height: 100%;
- border: 3px solid teal;
+ background-color: teal;
  margin: 0 auto;
+ margin-top: 40px;
  padding: 20px;
 }
 
@@ -27,14 +47,27 @@ h1 {
  background-color: Teal;
 }
 
-.cat {
- background-color: lightblue;
-}
 
 label {
  margin-top: 10px;
+ color: white;
 }
 
 input {
  margin-bottom: 10px;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+#cat-name {
+    margin-top: 30px;
+}
+
+
+.litters {
+    list-style: none;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }

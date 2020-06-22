@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from './addCat.css';
 import Form from './addCat.js';
 
+// Här syns vilka ny inputs (forms) som skapats, läggs till på "Lägg till i Form-componenten"
 
 const CatInputs = ({ idx, catState, handleCatChange }) => {
  const catId = `name-${idx}`;
@@ -11,13 +12,13 @@ const CatInputs = ({ idx, catState, handleCatChange }) => {
 
   return (
       <div key={`cat-${idx}`}>
-        <label htmlFor={catId}>{`Kattunge: ${idx + 1}`}</label>
+        <label htmlFor={catId} id="cat-name">{`Kattunge: ${idx + 1}`}</label>
         <input
           type="text"
           name={catId}
           data-idx={idx}
           id={catId}
-          className="name"
+          className="name form-control"
           value={catState[idx].name}
           onChange={handleCatChange}
         />
@@ -28,7 +29,7 @@ const CatInputs = ({ idx, catState, handleCatChange }) => {
           name={sexId}
           data-idx={idx}
           id={sexId}
-          className="sex"
+          className="sex form-control"
           value={catState[idx].sex}
           onChange={handleCatChange}
         />
@@ -39,11 +40,10 @@ const CatInputs = ({ idx, catState, handleCatChange }) => {
           name={weightId}
           data-idx={idx}
           id={weightId}
-          className="weight"
+          className="weight form-control"
           value={catState[idx].weight}
           onChange={handleCatChange}
         />
-
       </div>
     );
 };

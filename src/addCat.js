@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import style from './addCat.css';
 import CatInputs from './catinputs';
 
+// Formulär som skapar varje ny katt
 
 const Form = () => {
     const [ownerState, setOwnerState] = useState({
@@ -64,13 +65,14 @@ const Form = () => {
         <input
           type="button"
           id="btn-add"
-          class="btn btn-primary"
+          class="btn btn-info"
           value="Lägg till kattunge"
           onClick={addCat}
         />
         </div>
 
-        <div>
+
+        <div className="cats">
         {
           catState.map((val, idx) => (
            <CatInputs
@@ -84,7 +86,7 @@ const Form = () => {
          </div>
 
         <div className="form-group">
-        <input type="submit" class="btn btn-primary" value="Lägg till" />
+        <input type="submit" class="btn btn-info" value="Lägg till" />
        </div>
 
       </form>
