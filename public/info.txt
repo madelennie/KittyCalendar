@@ -1,0 +1,24 @@
+The app:
+
+- Start: en knapp - "Lägg till katt"
+- Klicka på Lägg till Katt -> Pop Up med formulär där man fyller i namn osv.
+- Klicka på Lägg till, och informationen läggs i dashboarden (varje katt får ett eget "kort")
+- Man kan ändra namn osv på Katten
+- Vikt plussas på och man ser en viktökning från den första vikten i gram eller procent.
+
+Man kan logga in och se sina kullar - Firebase (samla alla katter i ett arkiv), kanske skriva ut.
+
+Mobile first?
+
+
+
+Bygga en dashboard (första sida):
+- Log In
+- Reg
+
+Egen Dashboard (när man loggat in):
+- Se kullar
+- Klicka på kullar
+
+Redigera kull, lägga till i kullar
+Skapa ny kull
