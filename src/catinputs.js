@@ -6,12 +6,16 @@ import Form from './addCat.js';
 // Här syns vilka ny inputs (forms) som skapats, läggs till på "Lägg till i Form-componenten"
 
 const CatInputs = ({ idx, catState, handleCatChange }) => {
+ 
  const catId = `name-${idx}`;
  const sexId = `sex-${idx}`;
  const weightId = `weight-${idx}`;
 
+ 
+
   return (
       <div key={`cat-${idx}`}>
+
         <label htmlFor={catId} id="cat-name">{`Kattunge: ${idx + 1}`}</label>
         <input
           type="text"
@@ -20,7 +24,8 @@ const CatInputs = ({ idx, catState, handleCatChange }) => {
           id={catId}
           className="name form-control"
           value={catState[idx].name}
-          onChange={handleCatChange}
+          onChange={(e) => handleCatChange(e, "name")}
+          //Till funktionen skickar vi istället event och en string med vilken input det ska vara i statet.
         />
 
         <label htmlFor={sexId}>Kön: </label>
@@ -31,7 +36,7 @@ const CatInputs = ({ idx, catState, handleCatChange }) => {
           id={sexId}
           className="sex form-control"
           value={catState[idx].sex}
-          onChange={handleCatChange}
+          onChange={(e) => handleCatChange(e, "sex")}
         />
 
         <label htmlFor={catId}>Vikt: </label>
@@ -42,7 +47,7 @@ const CatInputs = ({ idx, catState, handleCatChange }) => {
           id={weightId}
           className="weight form-control"
           value={catState[idx].weight}
-          onChange={handleCatChange}
+          onChange={(e) => handleCatChange(e, "weight")}
         />
       </div>
     );
