@@ -2,8 +2,8 @@
 
 <h2>This is an app for the breeders to keep track of the kittens in the litter that is born. </h2>
 
-:paw_prints: Add a kitten, with name, sex and the first weight of birth.
-:paw_prints: As the days pass you can update the weight and see the progress of gaining it through time.
+- :paw_prints: Add a kitten, with name, sex and the first weight of birth.
+- :paw_prints: As the days pass you can update the weight and see the progress of gaining it through time.
 
 Keep the litters updated, and add new ones as they come along. 
 
